@@ -115,22 +115,43 @@ df.boxplot(column='Age',by='Survived')
 ```
 <img width="704" height="502" alt="Screenshot 2025-09-15 113557" src="https://github.com/user-attachments/assets/e203f5fa-e9d1-4d93-9a36-100307209810" />
 
+
+```
 sns.scatterplot(x=df['Age'],y=df['Fare'])
+```
 
 <img width="750" height="489" alt="Screenshot 2025-09-15 113601" src="https://github.com/user-attachments/assets/03524e00-f880-4bd7-8011-3c66dae10d6c" />
 
+
+```
 plt=sns.boxplot(x='Pclass',y='Age',hue='Gender',data=df)
+```
+
+
 <img width="738" height="454" alt="Screenshot 2025-09-15 113607" src="https://github.com/user-attachments/assets/ff7cdcd6-541f-4cfb-8f45-da026e1c0a0b" />
 
+
+```
 sns.catplot(x='Pclass',y='Age',hue='Gender',col='Survived',kind='box',data=df)
+```
+
 <img width="1069" height="511" alt="Screenshot 2025-09-15 113616" src="https://github.com/user-attachments/assets/9c6f990a-16aa-473e-afce-21560c2caba9" />
 
+
+```
 corr=df.corr(numeric_only=True)
 sns.heatmap(corr,annot=True)
+```
+
+
 <img width="610" height="486" alt="Screenshot 2025-09-15 113623" src="https://github.com/user-attachments/assets/d054bab4-abbc-4e9f-aa31-d181ed6bab52" />
 
+```
 corr=df.corr(numeric_only=True)
 sns.heatmap(corr)
+```
+
+
 <img width="613" height="480" alt="Screenshot 2025-09-15 113628" src="https://github.com/user-attachments/assets/af2a4327-5ddf-408a-9891-4a321d871b61" />
 
 
